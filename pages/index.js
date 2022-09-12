@@ -5,8 +5,8 @@ import { Flex, Box, Button, Text } from '@chakra-ui/react';
 import Property from '../components/Property';
 import { baseUrl, fetchApi } from '../utils/fetchApi';
 
-const Banner = ({ purpose,title1,title2,desc1,desc2,linkName,buttonText,imageUrl }) => (
-  <Flex flexWrap="wrap" justifyContent="center" alignItems="center" m="10" >
+export const Banner = ({ purpose,title1,title2,desc1,desc2,linkName,buttonText,imageUrl }) => (
+  <Flex flexWrap="wrap" justifyContent="center" alignItems="center" m="10" marginTop={'100px'} >
     <Box borderRadius={'lg'} overflow="hidden" width={500} height={300}>
       <Image src={imageUrl} width={500} height={300} alt='Banner-Pic' />
     </Box>
@@ -21,12 +21,8 @@ const Banner = ({ purpose,title1,title2,desc1,desc2,linkName,buttonText,imageUrl
   </Flex>
 );
 
-export default function Home({propertiesForSale,propertiesForRent}) {
-
-console.log(propertiesForSale);
-
-  return (
-    <div>
+const Home= ({propertiesForSale,propertiesForRent})=> (
+    
       <Box >
         <Banner
           purpose="LOCATION"
@@ -59,9 +55,9 @@ console.log(propertiesForSale);
         ))}
         </Flex>
       </Box>
-    </div>
+    
   );
-}
+
 
 
 export async function getStaticProps(){
@@ -75,3 +71,5 @@ export async function getStaticProps(){
     }
   }
 }
+
+export default Home;
