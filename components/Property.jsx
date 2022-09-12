@@ -22,10 +22,10 @@ const Property = ({
     area,
     agency,
     isVerified,
-    externalId,
+    externalID,
   },
 }) => (
-  <Link href={`/property/${externalId}`} passHref>
+  <Link href={`/property/${externalID}`} passHref>
     <Flex
       flexWrap="wrap"
       w="420px"
@@ -51,7 +51,7 @@ const Property = ({
             </Box>
             <Text fontWeight="bold" fontSize="lg">
               {millify(price)} €{' '}
-              {rentFrequency ? ' Par Mois' : '' && `/${rentFrequency}`}
+              {rentFrequency && `/${rentFrequency}`}
             </Text>
           </Flex>
           <Box>

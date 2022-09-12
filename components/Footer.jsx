@@ -1,5 +1,5 @@
-import { Box,Flex } from '@chakra-ui/layout';
-import Link from 'next/link'
+import { Box, Flex } from '@chakra-ui/layout';
+import Link from 'next/link';
 import { AiOutlineFacebook, AiOutlineInstagram } from 'react-icons/ai';
 import { SiTripadvisor, SiHotelsdotcom } from 'react-icons/si';
 import { TbBrandBooking } from 'react-icons/tb';
@@ -39,7 +39,7 @@ const Footer = () => (
       </Box>
     </Flex>
     <Box textAlign="center" color="gray.600">
-      conditions générales | C.G.V | Droits Exploitants <br />
+      conditions générales | C.G.V | Droits Exploitation <br />
       Tout droit resérvés © J&K Web 2022
     </Box>
     <Box

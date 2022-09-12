@@ -8,7 +8,7 @@ import Footer from './Footer';
 const Layout = ({children}) => (
   <>
     <Head>
-      <title>ImmoRicain Agence Mondial</title>
+      <title>DubaÏmmo Agence Mondial</title>
       <meta
         name="description"
         content="Agence mondial spécialisé dans la location ou l'achat de propriété au UAE"
